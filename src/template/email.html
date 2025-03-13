@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&display=swap");
+      body,
+      table,
+      td {
+        font-family: "Manrope", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background-color: #f5f5f5; */
+      }
+      p {
+        font-weight: 500;
+        letter-spacing: -0.3px;
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+      .header img,
+      .footer img {
+        width: 100%;
+        display: block;
+      }
+      .content {
+        padding: 5px 10px;
+        color: #333;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: left;
+      }
+      .button-container {
+        text-align: center;
+        padding: 12px;
+      }
+      .button {
+        text-decoration: none;
+        padding: 0px 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 0px;
+        font-weight: bold;
+      }
+      .social-icon img {
+        width: 24px;
+        height: 24px;
+      }
+      .button-img {
+        width: 150px;
+        height: auto;
+        display: block;
+      }
+      @media screen and (max-width: 600px) {
+        .content {
+          padding: 15px;
+        }
+        .button {
+          display: block;
+          width: 80%;
+          margin: 10px auto;
+        }
+        .button-img {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" class="container">
+      <!-- Header Section (Image) -->
+      <tr>
+        <td class="header">
+          <img
+            src="http://localhost:3000/banner.png"
+            alt="PGS Software Club Header"
+          />
+        </td>
+      </tr>
+
+      <!-- Content Section -->
+      <tr>
+        <td class="content">
+          <h1 style="font-size: 24px; letter-spacing: -1px">
+            Welcome {{.Name}}
+          </h1>
+          <p>
+            We’re delighted that you’ve chosen PGS Software Club to enhance your
+            skills and become part of a vibrant community of like-minded
+            individuals. Here, you’ll have the opportunity to connect with
+            peers, gain industry insights, and learn from experienced members.
+          </p>
+          <p>
+            PGS Software Club is more than just a place for theoretical
+            learning—it’s a collaborative space where members share knowledge,
+            build meaningful connections, and support each other’s professional
+            growth.
+          </p>
+          <p>
+            We’d love for you to be an active part of our community! You can
+            join us on both Viber and Discord using the links below:
+          </p>
+        </td>
+      </tr>
+
+      <!-- Buttons Section -->
+      <tr>
+        <td class="button-container">
+          <a
+            href="https://invite.viber.com/?g2=AQA1cUkHsSXOtVNOwlTtF0MbEknNHIYA28JNWj5F%2BJp%2FuIrxb4GAj0i%2Fn5rbu5xq"
+            class="button"
+          >
+            <img
+              src="http://localhost:3000/viber-btn.png"
+              alt="Viber button"
+              class="button-img"
+            />
+          </a>
+          <a href="#" class="button"
+            ><img
+              src="http://localhost:3000/discord-btn.png"
+              alt="Discord Btn"
+              class="button-img"
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <hr style="border: 1px dashed #e0e0e0" />
+        </td>
+      </tr>
+      <tr>
+        <td class="button-container">
+          <a href="#" class="button"
+            ><img
+              src="http://localhost:3000/follow-us-on.png"
+              alt="Instagram"
+              class="button-img"
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <p>Hope to see you there to be the part of the community.</p>
+          <p>
+            Regards, <br />
+            PGS Software Club
+          </p>
+        </td>
+      </tr>
+
+      <!-- <tr>
+        <td
+          style="
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding-bottom: 5px;
+          "
+        >
+          <a
+            href="https://www.instagram.com/pgs_softwareclub/"
+            class="social-icon"
+          >
+            <img
+              src="http://localhost:3000/follow-us-on.png"
+              alt="Instagram"
+              style="width: 150px; height: auto; display: inline-block"
+            />
+          </a>
+        </td>
+      </tr> -->
+
+      <!-- Footer Section (Image) -->
+      <tr>
+        <td class="footer">
+          <img
+            src="http://localhost:3000/banner%20copy.png"
+            alt="PGS Software Club Footer"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
