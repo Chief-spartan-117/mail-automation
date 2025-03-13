@@ -18,4 +18,4 @@ COPY --from=builder /app/main .
 
 EXPOSE 3000
 
-CMD ["./mail-automation"]
+CMD ["./main"]
