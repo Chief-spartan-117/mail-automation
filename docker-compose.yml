@@ -1,12 +1,9 @@
 services:
   app:
-    container_name: go-mail-automation
+    container_name: go-app
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    volumes:
-      - .:/app
-volumes:
-  postgres_data:
+    restart: always
