@@ -61,7 +61,7 @@ func PostEmail(c *fiber.Ctx) error {
 		log.Fatalf("failed to set To adress: %s", err)
 	}
 
-	message.Subject("Welcome to PGS Software club")
+	message.Subject("Welcome to Software club")
 	t, _ := template.ParseFiles("./src/template/email.html")
 	message.AddAlternativeHTMLTemplate(t, email)
 
